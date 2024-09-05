@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Static Web BootCamp Day 2</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!--  Hero Section   -->
+    <header>
+      <h1>
+        WEB DEVELOPMENT <br />
+        BOOTCAMP
+      </h1>
+      <p class="hero-section-subtitle">MY PHOTO GALLERY</p>
+    </header>
+
+    <!-- Main content -->
+
+    <main>
+      <!-- Features section -->
+      <div class="section-title">Features</div>
+      <section class="section-content" style="gap: 24px">
+        <div class="feature-card">
+          <img
+            src="../assets/features/image-bootcamp-feature-1.png"
+            alt="feature 1"
+          />
+          <div>
+            <h2 class="feature-card-title">City Skyline</h2>
+            <p class="feature-card-description">
+              Unveiling the urban tapestry through my lens. Dive into a
+              collection of breathtaking cityscapes that capture the pulse and
+              energy of iconic skylines. From the glittering lights to
+              architectural marvels, each photograph tells a story of the
+              dynamic beauty that defines our urban landscapes. Explore the City
+              Skyline section and witness the metropolis come alive in every
+              frame.
+            </p>
+          </div>
+        </div>
+        <div class="feature-card-reverse">
+          <img
+            src="../assets/features/image-bootcamp-feature-2.png"
+            alt="feature 2"
+          />
+          <div>
+            <h2 class="feature-card-title">Corporate Stockphoto</h2>
+            <p class="feature-card-description">
+              A visual narrative of professionalism. Explore compelling
+              executive portraits, team dynamics, and operational excellence,
+              each frame narrating the story of businesses with authenticity and
+              artistry. Immerse yourself in the Corporate Photo section and
+              experience the visual poetry that captures the strength,
+              innovation, and collaborative spirit driving corporate success.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--  Grid Section   -->
+
+      <div class="section-title">My Work</div>
+      <section class="mywork-grid">
+        <img src="./assets/grid/image-bootcamp-1.png" alt="image1" />
+        <img src="./assets/grid/image-bootcamp-2.png" alt="image2" />
+        <img src="./assets/grid/image-bootcamp-3.png" alt="image3" />
+        <img src="./assets/grid/image-bootcamp-4.png" alt="image4" />
+        <img src="./assets/grid/image-bootcamp-5.png" alt="image5" />
+        <img src="./assets/grid/image-bootcamp-6.png" alt="image6" />
+      </section>
+
+      <!--  Slider Section   -->
+    </main>
+
+    <!--  Footer Section   -->
+    <footer>
+      <div>
+        left
+        <h3>Jane Doe</h3>
+
+        <p>
+          Hello, I'm Jane Doe, a passionate photographer capturing moments with
+          creativity and authenticity. Through my lens, I bring stories to life,
+          showcasing the beauty in every frame. Explore my portfolio and join me
+          on a visual journey where each photograph tells a unique tale. I'm
+          open for hiring and excited to collaborate on your next project.
+        </p>
+      </div>
+      <input type="email" class="email-input" placeholder="Enter your email" />
+      <button onclick="mySubscribe()" class="subscribe">Subscribe</button>
+
+      <script>
+        function mySubscribe() {
+          // Get the email input element using class name
+          const emailInput = document.getElementsByClassName("email-input")[0]
+
+          // Check if the email is valid
+          if (emailInput.checkValidity()) {
+            // Retrieve the value entered by the user
+            const email = emailInput.value
+
+            // Display an alert with a custom message
+            alert("Hello, " + email + "! Finally Subscribe!")
+          } else {
+            alert("Please enter a valid email address.")
+          }
+        }
+      </script>
+
+      <hr class="footer-divider" />
+      <p class="copywright">© 2024, Jane Doe. All Rights Reserved.</p>
+
+      <div>middle</div>
+    </footer>
+  </body>
+</html>
